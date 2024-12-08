@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="eng-ca">
+  <head>
+    <meta charset="utc-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Final-HomePage</title>
+    <!--Created by <Michael Gvozdek> on <2024/11/04> -->
+    <link rel="stylesheet" href="https://use.typekit.net/ltl0scj.css">
+    <style>
+      html {
+        margin: 0;
+        padding: 0; 
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+      }
+
+      .regular {
+        font-family: "azo-sans-web", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .medium {
+        font-family: "azo-sans-web", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      .bold {
+        font-family: "azo-sans-web", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .black {
+        font-family: "azo-sans-web", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+
+      .header {
+        box-sizing: border-box;
+        background-color: #283121;
+        height: 100px;
+        float: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        position: fixed;
+        z-index: 1000;
+
+      }
+
+      #nav {
+        flex: 1;
+        
+      }
+
+      #nav ul {
+        list-style-type: none;
+        padding: 5px 0px 10px 10px;
+        overflow: hidden;
+      }
+
+      #nav li {
+        float: left;
+        padding: 25px 25px 10px 50px;
+      }
+
+      #nav a:link {
+        color: #a9a9a9;
+        text-decoration: none;
+        font-size: 25px;
+      }
+
+      /* visited link */
+      #nav a:visited {
+        color: #a9a9a9;
+        text-decoration: none;
+      }
+
+      /* mouse over link */
+      #nav a:hover {
+        color: #e8ebe7;
+        text-decoration: none;
+      }
+
+      /* selected link */
+      #nav a:active {
+        color: #e8ebe7;
+        text-decoration: none;
+      }
+
+      .logo {
+        width: 65px;
+        height: 65px;
+        margin: 0 auto;
+        flex: none;
+        display: block;
+      }
+
+      .contacts {
+        color: white;
+        flex: 1;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 75px;
+      }
+
+      .background {
+        width: 100%;
+      }
+
+      .back {
+        background-color: #1e1f1e;
+        height: 5000px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 500px;
+        justify-content: flex-start;
+        height: 100%;
+      }
+
+      .displayedWork {
+        width: 1133px;
+        height: 933px;
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .titleBox {
+        height: 200px;
+        background-color: #283121;
+        width: 1133px;
+        
+        margin-top: 733px;
+        position: absolute;
+        text-align: left;
+        padding-left: 100px;
+        padding-top: 20px;
+        box-sizing: border-box;
+        line-height: 200%;
+      }
+
+      .title {
+        color: #e8ebe7;
+        text-align: left;
+        font-size: 35px;
+        font-family: "azo-sans-web", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      .subTitle {
+        color: #adadad;
+        text-align: left;
+        font-size: 28px;
+        font-family: "azo-sans-web", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-90%, -100%);
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        padding: 10px;
+      }
+      
+      .image-container {
+        position: relative;
+        display: inline-block;
+        width: fit-content;
+      }
+      
+      .name-Main {
+        font-family: "azo-sans-web", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 3em;
+      }
+      
+      .name-Sub {
+        font-family: "azo-sans-web", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #516543;
+        transform: translate(0%, -125%);
+        font-size: 1.55em;
+      }
+      
+      .textBox {
+        width: 1133px;
+        position: static; 
+        text-align: center;
+        box-sizing: border-box;
+      }
+      
+      .footer {
+        font-family: "azo-sans-web", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #516543;
+        font-size: 2em;
+      }
+      
+      .contactsFooter {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        gap: 20px;
+
+      }
+    </style>
+  </head>
+
+  <body class="back">
+    <div class="header">
+      <div id="nav">
+        <ul>
+          <li class="medium"><a href="/1">HOME</a></li>
+          <li class="medium"><a href="/2">ABOUT ME</a></li>
+          <li class="medium"><a href="/3">CONTACT</a></li>
+        </ul>
+      </div>
+      <img src="MichaelGvozdek - SilhouetteLogo.png" alt="Michaels Personal Logo" class="logo">
+      <div class="contacts">
+        <a href="http://www.youtube.com/@jobuandme">
+          <img src="Youtube.png" alt="Youtube" style="width: 50px; height: 35px;">
+        </a>
+        
+        <img src="linkedin.png" alt="Linkedin" style="width: 40px; height: 35px;">
+        
+        <a href="mailto:michaelgvozdek@icloud.com">
+          <img src="Email icon.png" alt="Email" style="width: 35px; height: 30px;">
+        </a>
+      </div>
+    </div>
+   
+
+
+    <div class="content">
+
+      <div class="textBox">  
+      <h1 class="footer"> Michael Gvozdek 2024</h1>
+      <div class="contactsFooter">
+
+        <img src="linkedin.png" alt="description of image" style="width: 40px; height: 35px;">
+        
+        <a href="mailto:michaelgvozdek@icloud.com">
+          <img src="Email icon.png" alt="description of image" style="width: 35px; height: 30px;">
+        </a>
+      </div>
+        
+      </div>
+    </div>
+  </body>
+
+</html>
